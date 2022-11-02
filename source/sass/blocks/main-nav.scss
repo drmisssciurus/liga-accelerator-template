@@ -1,0 +1,18 @@
+.main-nav {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 120px;
+  // background-color: $color-default-black;
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1100px;
+  padding-top: 45px;
+  margin: 0 auto;
+}
