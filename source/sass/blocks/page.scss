@@ -1,0 +1,15 @@
+.page {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-grey-white;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $color-default-white;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
