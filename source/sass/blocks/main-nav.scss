@@ -13,6 +13,32 @@
   justify-content: space-between;
   align-items: center;
   width: 1100px;
-  padding-top: 45px;
   margin: 0 auto;
+  height: 55px;
+  padding-top: 48px;
+}
+
+.main-nav__button {
+  color: $color-default-white;
+  background-color: transparent;
+  border: 1px solid $color-default-white;
+  padding: 10px 15px;
+}
+
+.main-nav__tel,
+.main-nav__mail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.main-nav__tel-info,
+.main-nav__mail-info {
+  font-family: 'PT Mono';
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0;
+  padding-left: 15px;
 }

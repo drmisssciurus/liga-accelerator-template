@@ -1,0 +1,23 @@
+.products__container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: $color-background-header;
+}
+
+.products__intro {
+  width: 1200px;
+  text-align: start;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-default-white;
+  margin: 0 auto;
+  padding-top: 70px;
+
+  &--second {
+    display: none;
+  }
+}

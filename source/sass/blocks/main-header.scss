@@ -3,7 +3,9 @@
   width: 100%;
   margin: 0 auto;
   height: 880px;
-  background-image: url("../img/background-desktop.png");
+  background-image:
+    linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
+    url("../img/background-desktop.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

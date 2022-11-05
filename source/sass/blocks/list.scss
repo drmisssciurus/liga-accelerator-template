@@ -1,0 +1,51 @@
+.list {
+  width: 1222px;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: 650px;
+  grid-column-gap: 85px;
+  grid-row-gap: 0px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 140px;
+}
+
+.list__wrapper {
+  display: block;
+  position: relative;
+
+  &--first {
+    background-image: url(../img/servises-1-desktop.png);
+  }
+
+  &--second {
+    background-image: url(../img/servises-2-desktop.png);
+  }
+
+  &--third {
+    background-image: url(../img/servises-3-desktop.png);
+  }
+}
+
+.list__name {
+  width: 170px;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.list__mark {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 289px;
+  top: 590px;
+  background-color: $color-default-blue;
+  background-image: url("../img/svg/vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

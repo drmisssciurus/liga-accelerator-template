@@ -11,6 +11,13 @@ body {
   min-height: 100vh;
 }
 
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-style: normal;
   font-weight: 400;

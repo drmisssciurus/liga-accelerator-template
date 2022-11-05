@@ -1,0 +1,31 @@
+.description {
+  text-align: start;
+  width: 970px;
+}
+
+.description__intro {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+
+  color: $color-background-header;
+}
+
+.description__info {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: $color-background-header;
+}
+
+.description__button {
+  color: $color-default-blue;
+  border: 1px solid $color-default-blue;
+  padding: 15px 45px;
+  background-color: transparent;
+}

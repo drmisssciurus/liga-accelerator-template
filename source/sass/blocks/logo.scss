@@ -1,0 +1,29 @@
+.logo {
+  display: flex;
+}
+
+.logo img {
+  padding-right: 15px;
+}
+
+.logo__name-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo__name {
+  margin: 0;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.logo__intro {
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}

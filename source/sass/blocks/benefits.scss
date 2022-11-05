@@ -1,0 +1,18 @@
+.benefits__container {
+  width: 1250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+.benefits__item-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  padding: 0;
+  margin: 0;
+}
