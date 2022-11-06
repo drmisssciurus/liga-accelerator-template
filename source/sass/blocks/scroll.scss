@@ -1,0 +1,19 @@
+.scroll {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.scroll__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll__info {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.7);
+}
