@@ -5,10 +5,15 @@
 }
 
 .about-company__container {
-  width: 1222px;
+  width: 64%;
+  max-width: 1222px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
   margin: 0 auto;
+}
+
+.about-company__img {
+  margin-right: 90px;
 }
