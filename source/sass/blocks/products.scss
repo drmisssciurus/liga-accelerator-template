@@ -3,6 +3,10 @@
   max-width: 1920px;
   margin: 0 auto;
   background-color: $color-background-header;
+
+  @media (max-width: $vp-770) {
+    max-width: 770px;
+  }
 }
 
 .products__intro {
@@ -19,5 +23,9 @@
 
   &--second {
     display: none;
+  }
+
+  @media (max-width: $vp-770) {
+   width: 666px;
   }
 }

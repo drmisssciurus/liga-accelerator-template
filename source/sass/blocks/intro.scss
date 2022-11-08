@@ -6,6 +6,12 @@
   text-align: initial;
   margin: 0 475px;
   padding-top: 200px;
+
+  @media (max-width: $vp-770) {
+    width: 83%;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
 }
 
 .intro__intro {
@@ -16,6 +22,12 @@
   line-height: 94px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (max-width: $vp-770) {
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 0.07em;
+  }
 }
 
 .intro__description {
@@ -25,6 +37,7 @@
   font-size: 22px;
   line-height: 34px;
   color: $color-grey-white;
+  margin: 0;
 }
 
 .intro__button {
@@ -32,4 +45,9 @@
   color: $color-grey-white;
   padding: 15px 25px;
   border: none;
+
+  @media (max-width: $vp-770) {
+    margin-left: 45px;
+    margin-top: 50px;
+  }
 }

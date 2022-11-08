@@ -725,6 +725,7 @@ button,
 }
 
 .main-header {
+  max-width: 1920px;
   width: 100%;
   margin: 0 auto;
   height: 880px;
@@ -756,10 +757,6 @@ button,
 .btn:disabled {
   opacity: 0.5;
   pointer-events: none;
-}
-
-.btn.focus-visible:focus {
-  opacity: 0.8;
 }
 
 .modal {
@@ -908,6 +905,7 @@ button,
   font-size: 22px;
   line-height: 34px;
   color: #F2F5F6;
+  margin: 0;
 }
 
 .intro__button {
@@ -1074,6 +1072,7 @@ button,
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
+  margin: 0;
   color: #041827;
 }
 
@@ -1118,7 +1117,7 @@ button,
 }
 
 .list {
-  width: 1222px;
+  max-width: 1222px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (350px)[3];
@@ -1190,13 +1189,14 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  background-color: #00B2FF;
   background-image: url("../img/background-form.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.form__container-img {
+.form__image {
   padding-right: 120px;
 }
 
@@ -1565,39 +1565,111 @@ button,
   }
 */
 
-@media (max-width: 1439px) {
-  .container {
-    padding: 0 32px;
+@media (min-width: 770px) {
+  .main-nav__wrapper {
+    width: 83%;
+  }
+
+  .logo {
+    padding-right: 335px;
   }
 }
 
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 24px;
-  }
-}
-
-@media (max-width: 767px) {
-  .container {
-    padding: 0 16px;
+@media (max-width: 770px) {
+  .main-nav__button {
+    display: none;
   }
 
-  .modal__wrapper {
-    padding: 60px 16px;
+  .main-nav__tel-info,
+  .main-nav__mail-info {
+    display: none;
   }
 
-  .modal__content {
-    width: 100%;
-    padding: 20px;
+  .main-header {
+    max-width: 770px;
+    height: 640px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background-tablet.png");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-tablet.png");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-tablet.png");
   }
 
-  .modal--fit-content .modal__content {
-    width: 100%;
+  .intro {
+    width: 83%;
+    margin: 0 auto;
+    padding-top: 80px;
   }
-}
 
-@media (hover: hover) {
-  .btn:hover:not(.focus-visible) {
-    opacity: 0.8;
+  .intro__intro {
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 0.07em;
+  }
+
+  .intro__button {
+    margin-left: 45px;
+    margin-top: 50px;
+  }
+
+  .benefits__container {
+    max-width: 670px;
+    width: 87%;
+  }
+
+  .about-company__container {
+    max-width: 670px;
+  }
+
+  .about-company__img {
+    margin-right: 30px;
+    margin-bottom: 70px;
+  }
+
+  .description {
+    width: 495px;
+  }
+
+  .products__container {
+    max-width: 770px;
+  }
+
+  .products__intro {
+    width: 666px;
+  }
+
+  .list {
+    max-width: 670px;
+    width: 87%;
+    -ms-grid-columns: 670px;
+    grid-template-columns: 670px;
+    -ms-grid-rows: (250px)[3];
+    grid-template-rows: repeat(3, 250px);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+  }
+
+  .list__wrapper--first {
+    background-image: url(../img/servises-1-tablet.png);
+  }
+
+  .list__wrapper--second {
+    background-image: url(../img/servises-2-tablet.png);
+  }
+
+  .list__wrapper--third {
+    background-image: url(../img/servises-3-tablet.png);
+  }
+
+  .list__mark {
+    left: 610px;
+    top: 190px;
+  }
+
+  .form__container {
+    height: 580px;
+    background-image: none;
+  }
+
+  .form__image {
+    display: none;
   }
 }

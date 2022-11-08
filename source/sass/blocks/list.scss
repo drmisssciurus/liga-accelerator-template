@@ -1,5 +1,5 @@
 .list {
-  width: 1222px;
+  max-width: 1222px;
   display: grid;
   grid-template-columns: repeat(3, 350px);
   grid-template-rows: 650px;
@@ -8,6 +8,15 @@
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 140px;
+
+  @media (max-width: $vp-770) {
+    max-width: 670px;
+    width: 87%;
+    grid-template-columns: 670px;
+    grid-template-rows: repeat(3, 250px);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+  }
 }
 
 .list__wrapper {
@@ -24,6 +33,20 @@
 
   &--third {
     background-image: url(../img/servises-3-desktop.png);
+  }
+
+  @media (max-width: $vp-770) {
+    &--first {
+      background-image: url(../img/servises-1-tablet.png);
+    }
+
+    &--second {
+      background-image: url(../img/servises-2-tablet.png);
+    }
+
+    &--third {
+      background-image: url(../img/servises-3-tablet.png);
+    }
   }
 }
 
@@ -48,4 +71,9 @@
   background-image: url("../img/svg/vector.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (max-width: $vp-770) {
+    left: 610px;
+    top: 190px;
+  }
 }

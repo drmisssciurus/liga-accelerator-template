@@ -10,10 +10,18 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   margin: 0 auto;
+
+  @media (max-width: $vp-770) {
+    max-width: 670px;
+  }
 }
 
 .about-company__img {
   margin-right: 90px;
+
+  @media (max-width: $vp-770) {
+    margin-right: 30px;
+    margin-bottom: 70px;
+  }
 }

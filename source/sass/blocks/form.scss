@@ -8,14 +8,24 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-color: $color-default-blue;
   background-image: url("../img/background-form.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (max-width: $vp-770) {
+    height: 580px;
+    background-image: none;
+  }
 }
 
-.form__container-img {
+.form__image {
   padding-right: 120px;
+
+   @media (max-width: $vp-770) {
+    display: none;
+  }
 }
 
 .form__intro {

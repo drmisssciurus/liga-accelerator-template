@@ -16,6 +16,10 @@
   margin: 0 auto;
   height: 55px;
   padding-top: 48px;
+
+  @media (min-width: $vp-770) {
+    width: 83%;
+  }
 }
 
 .main-nav__button {
@@ -23,6 +27,10 @@
   background-color: transparent;
   border: 1px solid $color-default-white;
   padding: 10px 15px;
+
+  @media (max-width: $vp-770) {
+    display: none;
+  }
 }
 
 .main-nav__tel,
@@ -41,4 +49,8 @@
   line-height: 18px;
   margin: 0;
   padding-left: 15px;
+
+  @media (max-width: $vp-770) {
+    display: none;
+  }
 }
