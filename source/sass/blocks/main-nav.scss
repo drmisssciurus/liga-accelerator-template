@@ -42,6 +42,12 @@
   justify-content: space-between;
 }
 
+.main-nav__mail {
+  @media (max-width: $vp-770) {
+    padding-left: 335px;
+  }
+}
+
 .main-nav__tel-info,
 .main-nav__mail-info {
   font-family: 'PT Mono';

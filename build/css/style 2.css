@@ -1435,26 +1435,6 @@ button,
   justify-content: space-between;
 }
 
-.footer__container-logo {
-  width: 16%;
-}
-
-.footer__container-desktop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  width: 68%;
-}
-
-.footer__container-sections,
-.footer__container-contacts {
-  width: 50%;
-}
-
 .footer__block-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1490,18 +1470,15 @@ button,
   font-size: 16px;
   line-height: 135%;
   color: rgba(255, 255, 255, 0.7);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[5];
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
   text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  height: 145px;
-  width: 220px;
 }
 
 .social__wrapper {
@@ -1592,15 +1569,15 @@ button,
   .main-nav__wrapper {
     width: 83%;
   }
+
+  .logo {
+    padding-right: 335px;
+  }
 }
 
 @media (max-width: 770px) {
   .main-nav__button {
     display: none;
-  }
-
-  .main-nav__mail {
-    padding-left: 335px;
   }
 
   .main-nav__tel-info,

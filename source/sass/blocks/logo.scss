@@ -1,9 +1,5 @@
 .logo {
   display: flex;
-
-  @media (min-width: $vp-770) {
-    padding-right: 335px;
-  }
 }
 
 .logo img {

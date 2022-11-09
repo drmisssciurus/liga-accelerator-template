@@ -19,6 +19,21 @@
   justify-content: space-between;
 }
 
+.footer__container-logo {
+  width: 16%;
+}
+
+.footer__container-desktop {
+  display: flex;
+  flex-direction: row;
+  width: 68%;
+}
+
+.footer__container-sections,
+.footer__container-contacts {
+  width: 50%;
+}
+
 .footer__block-group {
   display: flex;
   flex-direction: row;
@@ -45,10 +60,11 @@
   font-size: 16px;
   line-height: 135%;
   color: rgba(255, 255, 255, 0.7);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
   text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 145px;
+  width: 220px;
 }
