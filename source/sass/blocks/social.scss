@@ -3,4 +3,15 @@
   flex-direction: row;
   justify-content: space-around;
   padding-top: 30px;
+
+  @media (max-width: $vp-770) {
+    width: 24%;
+    padding-top: 0;
+  }
+
+  @media (max-width: $vp-320) {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
 }

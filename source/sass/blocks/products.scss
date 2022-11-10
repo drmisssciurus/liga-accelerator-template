@@ -28,4 +28,16 @@
   @media (max-width: $vp-770) {
    width: 666px;
   }
+
+  @media (max-width: $vp-320) {
+
+    &--first {
+      display: none;
+    }
+
+    &--second {
+      display: block;
+      width: 270px;
+    }
+  }
 }

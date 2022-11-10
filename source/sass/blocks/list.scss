@@ -17,6 +17,11 @@
     grid-column-gap: 0px;
     grid-row-gap: 30px;
   }
+
+  @media (max-width: $vp-320) {
+    grid-template-columns: 270px;
+    grid-template-rows: repeat(3, 250px);
+  }
 }
 
 .list__wrapper {
@@ -48,6 +53,20 @@
       background-image: url(../img/servises-3-tablet.png);
     }
   }
+
+  @media (max-width: $vp-320) {
+    &--first {
+      background-image: url(../img/servises-1-mobile.png);
+    }
+
+    &--second {
+      background-image: url(../img/servises-2-mobile.png);
+    }
+
+    &--third {
+      background-image: url(../img/servises-3-mobile.png);
+    }
+  }
 }
 
 .list__name {
@@ -75,5 +94,12 @@
   @media (max-width: $vp-770) {
     left: 610px;
     top: 190px;
+  }
+
+  @media (max-width: $vp-320) {
+    width: 40px;
+    height: 40px;
+    left: 230.32px;
+    top: 209.54px;
   }
 }

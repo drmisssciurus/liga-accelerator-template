@@ -8,7 +8,7 @@
     url("../img/background-desktop.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   @media (max-width: $vp-770) {
     max-width: 770px;
@@ -16,6 +16,13 @@
     background-image:
     linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
     url("../img/background-tablet.png");
+  }
+
+  @media (max-width: $vp-320) {
+    height: 560px;
+    background-image:
+    linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
+    url("../img/background-mobile.png");
   }
 
 }

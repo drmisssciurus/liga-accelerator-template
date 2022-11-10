@@ -1,11 +1,22 @@
 .footer {
   width: 100%;
   max-width: 1920px;
-  height: 280px;
+  height: auto;
   margin: 0 auto;
   background-color: $color-background-header;
   display: flex;
   padding-top: 63px;
+
+  @media (max-width: $vp-770) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: $vp-320) {
+    padding-top: 0;
+    height: auto;
+    padding: 40px 0;
+  }
 }
 
 .footer__container {
@@ -17,21 +28,64 @@
   margin: 0 auto;
   align-items: flex-start;
   justify-content: space-between;
+
+  @media (max-width: $vp-770) {
+    flex-direction: column;
+  }
 }
 
-.footer__container-logo {
-  width: 16%;
+.footer__container-logo-footer {
+  @media (max-width: $vp-770) {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: $vp-320) {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
 }
 
 .footer__container-desktop {
   display: flex;
   flex-direction: row;
   width: 68%;
+
+  @media (max-width: $vp-770) {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $vp-320) {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .footer__container-sections,
 .footer__container-contacts {
   width: 50%;
+
+  @media (max-width: $vp-320) {
+    width: 100%;
+    padding-left: 20px;
+    border-top: 1px solid $color-default-white;
+  }
+}
+
+.footer__container-contacts {
+  @media (max-width: $vp-320) {
+    border-bottom: 1px solid $color-default-white;
+    padding-bottom: 20px;
+  }
 }
 
 .footer__block-group {
@@ -51,6 +105,10 @@
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 20px;
+
+  @media (max-width: $vp-320) {
+    padding-top: 20px;
+  }
 }
 
 .footer__list {
@@ -67,4 +125,24 @@
   flex-wrap: wrap;
   height: 145px;
   width: 220px;
+
+  @media (max-width: $vp-770) {
+    height: auto;
+    width: 80%;
+    flex-wrap: nowrap;
+  }
+
+  @media (max-width: $vp-320) {
+    display: none;
+  }
+}
+
+.footer__list li {
+  @media (max-width: $vp-770) {
+    padding-bottom: 5px;
+  }
+
+  @media (max-width: $vp-320) {
+    padding-bottom: 0;
+  }
 }

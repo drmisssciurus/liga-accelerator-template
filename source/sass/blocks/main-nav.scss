@@ -1,9 +1,7 @@
 .main-nav {
   width: 100%;
-  // max-width: 1920px;
   margin: 0 auto;
   height: 120px;
-  // background-color: $color-default-black;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 }
 
@@ -19,6 +17,10 @@
 
   @media (min-width: $vp-770) {
     width: 83%;
+  }
+
+  @media (max-width: $vp-320) {
+    padding-top: 50px;
   }
 }
 
@@ -45,6 +47,10 @@
 .main-nav__mail {
   @media (max-width: $vp-770) {
     padding-left: 335px;
+  }
+
+  @media (max-width: $vp-320) {
+    padding-left: 35px;
   }
 }
 

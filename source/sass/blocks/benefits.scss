@@ -11,6 +11,13 @@
     max-width: 670px;
     width: 87%;
   }
+
+  @media (max-width: $vp-320) {
+    max-width: 320px;
+    width: 85%;
+    margin-top: 50px;
+  }
+
 }
 
 .benefits__item-wrapper {
@@ -21,4 +28,11 @@
   grid-row-gap: 30px;
   padding: 0;
   margin: 0;
+
+  @media (max-width: $vp-320) {
+    grid-template-columns: 270px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+  }
 }

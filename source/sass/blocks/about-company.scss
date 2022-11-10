@@ -24,4 +24,8 @@
     margin-right: 30px;
     margin-bottom: 70px;
   }
+
+  @media (max-width: $vp-320) {
+    display: none;
+  }
 }

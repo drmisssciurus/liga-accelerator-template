@@ -28,6 +28,11 @@
     line-height: 75px;
     letter-spacing: 0.07em;
   }
+
+  @media (max-width: $vp-320) {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 .intro__description {
@@ -38,6 +43,28 @@
   line-height: 34px;
   color: $color-grey-white;
   margin: 0;
+
+  @media (max-width: $vp-320) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.intro__button-mobile {
+  display: none;
+
+  @media (max-width: $vp-320) {
+    display: block;
+    background-color: $color-default-blue;
+    color: $color-grey-white;
+    padding: 10px 30px;
+    border: none;
+    font-size: 18px;
+    line-height: 21px;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 50px;
+  }
 }
 
 .intro__button {
@@ -45,9 +72,15 @@
   color: $color-grey-white;
   padding: 15px 25px;
   border: none;
+  font-size: 18px;
+  line-height: 21px;
 
   @media (max-width: $vp-770) {
     margin-left: 45px;
     margin-top: 50px;
+  }
+
+  @media (max-width: $vp-320) {
+    display: none;
   }
 }

@@ -18,6 +18,10 @@
     height: 580px;
     background-image: none;
   }
+
+  @media (max-width: $vp-320) {
+    height: 750px;
+  }
 }
 
 .form__image {
@@ -37,6 +41,13 @@
   color: $color-default-white;
   text-align: left;
   margin: 0;
+
+  @media (max-width: $vp-320) {
+    width: 85%;
+    font-size: 30px;
+    line-height: 42px;
+    margin: 50px 25px 20px 25px;
+  }
 }
 
 .form__info {
@@ -47,4 +58,11 @@
   line-height: 22px;
   color: $color-default-white;
   text-align: left;
+
+  @media (max-width: $vp-320) {
+    width: 85%;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0 25px 40px 25px;
+  }
 }
