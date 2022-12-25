@@ -20,7 +20,7 @@
 }
 
 .footer__container {
-  width: 1210px;
+  width: 65%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -31,13 +31,16 @@
 
   @media (max-width: $vp-770) {
     flex-direction: column;
+    width: 90%;
   }
 }
 
 .footer__container-logo-footer {
+  width: 33%;
+
   @media (max-width: $vp-770) {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -59,7 +62,7 @@
   width: 68%;
 
   @media (max-width: $vp-770) {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -149,40 +152,71 @@
 // accordeon
 
 .accordeon {
-  max-width: 320px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+
+
+  @media (max-width: $vp-320) {
+    max-width: 320px;
+    flex-direction: column;
+  }
+}
+
+.accordeon-item {
+  width: 50%;
 }
 
 .accordeon .footer__container-sections {
+  @media (max-width: $vp-320) {
+
   position: relative;
+  }
 
 }
 
 .accordeon .footer__container-sections .label {
+  @media (max-width: $vp-320) {
+
   position: relative;
   cursor: pointer;
+  }
 }
 
-.accordeon .accordeon-item__trigger::before {
-  content: '+';
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  // transform: translateX(-50%);
-  font-size: 1.5em;
+.accordeon .accordeon-item__trigger{
+  &::before {
+    @media (max-width: $vp-320) {
+      content: '+';
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      font-size: 1.5em;
+    }
+  }
 }
 
 .accordeon-item__content {
+  @media (max-width: $vp-320) {
+
   display: none;
   text-align: left;
+  }
 }
 
 .accordeon__item--active .accordeon-item__content {
-  display: block;
+  @media (max-width: $vp-320) {
+    display: block;
+    }
 }
 
-.accordeon__item--active .accordeon-item__trigger::before {
-  content: '-';
-  top: 11%;
-  font-size: 2em;
+.accordeon__item--active .accordeon-item__trigger {
+  &::before {
+    @media (max-width: $vp-320) {
+      content: '-';
+      top: 11%;
+      font-size: 2em;
+    }
+  }
 }

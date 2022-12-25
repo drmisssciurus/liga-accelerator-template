@@ -1,43 +1,43 @@
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-// 	font-family: "PT Mono";
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+	font-family: "PT Mono";
 
-//   font-display: swap;
-// 	src: local("PTMono-400"),
-//     url("PTMono-400.woff2") format("woff2"),
-//     url("PTMono-400.woff") format("woff");
-// }
+  font-display: swap;
+	src: local("PTMono-400"),
+    url("PTMono-400.woff2") format("woff2"),
+    url("PTMono-400.woff") format("woff");
+}
 
-// @font-face {
-//   font-style: normal;
-//   font-weight: 500;
-// 	font-family: "Roboto";
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+	font-family: "Roboto";
 
-//   font-display: swap;
-// 	src:
-//   url("Roboto-500.woff2") format("woff2"),
-//   url("Roboto-500.woff") format("woff");
-// }
+  font-display: swap;
+	src:
+  url("Roboto-500.woff2") format("woff2"),
+  url("Roboto-500.woff") format("woff");
+}
 
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-// 	font-family: "Roboto Condensed";
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+	font-family: "roboto-condensed";
 
-//   font-display: swap;
-// 	src:
-//     url("roboto-condensed.woff2") format("woff2"),
-//     url("roboto-condensed.woff") format("woff");
-// }
+  font-display: swap;
+	src:
+    url("roboto-condensed.woff2") format("woff2"),
+    url("roboto-condensed.woff") format("woff");
+}
 
-// @font-face {
-//   font-style: normal;
-//   font-weight: 700;
-// 	font-family: "Roboto Condensed";
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+	font-family: "roboto-condensed";
 
-//   font-display: swap;
-// 	src:
-//     url("roboto-bold-condensed.woff2") format("woff2"),
-//     url("roboto-bold-condensed.woff") format("woff");
-// }
+  font-display: swap;
+	src:
+    url("roboto-bold-condensed.woff2") format("woff2"),
+    url("roboto-bold-condensed.woff") format("woff");
+}

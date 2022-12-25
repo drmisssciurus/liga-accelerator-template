@@ -1,3 +1,35 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "PT Mono";
+  font-display: swap;
+  src: local("PTMono-400"), url("PTMono-400.woff2") format("woff2"), url("PTMono-400.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("Roboto-500.woff2") format("woff2"), url("Roboto-500.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "roboto-condensed";
+  font-display: swap;
+  src: url("roboto-condensed.woff2") format("woff2"), url("roboto-condensed.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "roboto-condensed";
+  font-display: swap;
+  src: url("roboto-bold-condensed.woff2") format("woff2"), url("roboto-bold-condensed.woff") format("woff");
+}
+
 /* stylelint-disable */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -857,7 +889,7 @@ button,
 }
 
 .intro__intro {
-  font-family: "Roboto Condensed";
+  font-family: "roboto-condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
@@ -1432,7 +1464,7 @@ button,
 }
 
 .footer__container {
-  width: 1210px;
+  width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1451,6 +1483,10 @@ button,
   -ms-flex-align: start;
   align-items: flex-start;
   justify-content: space-between;
+}
+
+.footer__container-logo-footer {
+  width: 33%;
 }
 
 .footer__container-desktop {
@@ -1519,42 +1555,21 @@ button,
 }
 
 .accordeon {
-  max-width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.accordeon .footer__container-sections {
-  position: relative;
-}
-
-.accordeon .footer__container-sections .label {
-  position: relative;
-  cursor: pointer;
-}
-
-.accordeon .accordeon-item__trigger::before {
-  content: "+";
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  font-size: 1.5em;
-}
-
-.accordeon-item__content {
-  display: none;
-  text-align: left;
-}
-
-.accordeon__item--active .accordeon-item__content {
-  display: block;
-}
-
-.accordeon__item--active .accordeon-item__trigger::before {
-  content: "-";
-  top: 11%;
-  font-size: 2em;
+.accordeon-item {
+  width: 50%;
 }
 
 .social__wrapper {
@@ -1759,11 +1774,12 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    width: 90%;
   }
 
   .footer__container-logo-footer {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1781,7 +1797,7 @@ button,
   }
 
   .footer__container-desktop {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -2028,6 +2044,49 @@ button,
 
   .footer__list li {
     padding-bottom: 0;
+  }
+
+  .accordeon {
+    max-width: 320px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .accordeon .footer__container-sections {
+    position: relative;
+  }
+
+  .accordeon .footer__container-sections .label {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .accordeon .accordeon-item__trigger::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 1.5em;
+  }
+
+  .accordeon-item__content {
+    display: none;
+    text-align: left;
+  }
+
+  .accordeon__item--active .accordeon-item__content {
+    display: block;
+  }
+
+  .accordeon__item--active .accordeon-item__trigger::before {
+    content: "-";
+    top: 11%;
+    font-size: 2em;
   }
 
   .social__wrapper {
