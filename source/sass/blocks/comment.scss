@@ -8,6 +8,10 @@
     width: 85%;
     margin: 0 auto;
   }
+
+  &--modal {
+    width: 100%;
+  }
 }
 
 .comment__wrapper {
@@ -20,11 +24,20 @@
     flex-direction: column;
     width: 100%;
   }
+
+  &--modal {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .comment__name {
   @media (max-width: $vp-320) {
     margin-bottom: 20px;
+  }
+
+  &--modal {
+    padding-bottom: 20px;
   }
 }
 
@@ -43,6 +56,10 @@
   @media (max-width: $vp-320) {
     width: 270px;
   }
+
+  &--modal {
+    width: 100%;
+  }
 }
 
 .comment__inform-input {
@@ -59,6 +76,10 @@
 
   @media (max-width: $vp-320) {
     width: 270px;
+  }
+
+  &--modal {
+    width: 100%;
   }
 }
 
@@ -78,6 +99,10 @@
   @media (max-width: $vp-320) {
     width: 270px;
   }
+
+  &--modal {
+    width: 100%;
+  }
 }
 
 .comment__button-wrapper {
@@ -88,6 +113,10 @@
   padding-top: 35px;
 
   @media (max-width: $vp-320) {
+    flex-direction: column;
+  }
+
+  &--modal {
     flex-direction: column;
   }
 }
@@ -109,5 +138,9 @@
 
   @media (max-width: $vp-320) {
     margin-bottom: 20px;
+  }
+
+  &--modal {
+    width: 100%;
   }
 }

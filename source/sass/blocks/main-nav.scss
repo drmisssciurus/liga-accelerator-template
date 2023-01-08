@@ -1,8 +1,9 @@
 .main-nav {
   position: fixed;
   top: 0;
-  left: 0;
+  left: auto;
   width: 100%;
+  max-width: 1920px;
   margin: 0 auto;
   height: 120px;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);

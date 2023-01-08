@@ -39,3 +39,20 @@
 .modal__close:focus-visible {
   outline: $color-default-white;
 }
+
+.modal__title {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: left;
+}
+
+.modal__description {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+}

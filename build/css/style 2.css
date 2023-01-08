@@ -641,6 +641,7 @@ button,
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 .page {
@@ -662,9 +663,8 @@ button,
 .main-nav {
   position: fixed;
   top: 0;
-  left: auto;
+  left: 0;
   width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
   height: 120px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
@@ -1223,10 +1223,6 @@ button,
   width: 100%;
 }
 
-.comment__name--modal {
-  padding-bottom: 20px;
-}
-
 .comment__name-input {
   width: 275px;
   height: 50px;
@@ -1297,10 +1293,6 @@ button,
   padding-left: 15px;
 }
 
-.comment__inform-input--modal {
-  width: 100%;
-}
-
 .comment__placeholder {
   width: 580px;
   height: 155px;
@@ -1336,7 +1328,7 @@ button,
 }
 
 .comment__placeholder--modal {
-  width: 100%;
+  width: 80%;
 }
 
 .comment__button-wrapper {
@@ -1379,19 +1371,11 @@ button,
   background-color: #041827;
 }
 
-.comment__button--modal {
-  width: 100%;
-}
-
 .agreement {
   width: 50%;
   position: relative;
   text-align: left;
   padding-left: 25px;
-}
-
-.agreement--modal {
-  width: 100%;
 }
 
 .agreement__info {
