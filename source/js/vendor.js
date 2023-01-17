@@ -1,3 +1,12 @@
-// Swiper 7.4.1
-// import './vendor/swiper';
-import './vendor/focus-visible-polyfill';
+const anchors = document.querySelector('a[href*="#"]');
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (event) {
+    event.preventDefault();
+    const blockID = anchor.getAttribute('href');
+    document.querySelector('' + blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  });
+}

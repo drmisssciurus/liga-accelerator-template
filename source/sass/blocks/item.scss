@@ -5,13 +5,9 @@
   padding: 30px;
   text-align: initial;
   border: 1px solid $color-grey-border;
-
   border-left: 5px solid $color-default-blue;
 
-  &--choose {
-    background-color: $color-default-blue;
-    border: none;
-  }
+  transition: 0.5s;
 }
 
 .item__intro {
@@ -21,10 +17,6 @@
   font-size: 24px;
   line-height: 34px;
   color: $color-default-blue;
-
-  &--choose {
-    color: $color-default-white;
-  }
 }
 
 .item__info {
@@ -34,8 +26,22 @@
   font-size: 16px;
   line-height: 135%;
   color: $color-background-header;
+}
 
-  &--choose {
+.item:hover {
+  transition: 0.5s;
+  background-color: $color-default-blue;
+  border-color: $color-default-blue;
+
+  h3 {
     color: $color-default-white;
+  }
+
+  p {
+    color: $color-default-white;
+  }
+
+  path {
+    fill: $color-default-white;
   }
 }

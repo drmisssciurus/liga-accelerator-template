@@ -942,11 +942,9 @@ button,
   text-align: initial;
   border: 1px solid #EBEBEB;
   border-left: 5px solid #00B2FF;
-}
-
-.item--choose {
-  background-color: #00B2FF;
-  border: none;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .item__intro {
@@ -958,10 +956,6 @@ button,
   color: #00B2FF;
 }
 
-.item__intro--choose {
-  color: #ffffff;
-}
-
 .item__info {
   font-family: "PT Mono";
   font-style: normal;
@@ -971,8 +965,24 @@ button,
   color: #041827;
 }
 
-.item__info--choose {
+.item:hover {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #00B2FF;
+  border-color: #00B2FF;
+}
+
+.item:hover h3 {
   color: #ffffff;
+}
+
+.item:hover p {
+  color: #ffffff;
+}
+
+.item:hover path {
+  fill: #ffffff;
 }
 
 .benefits__container {
@@ -1054,6 +1064,10 @@ button,
   color: #041827;
 }
 
+#more {
+  display: none;
+}
+
 .description__button {
   color: #00B2FF;
   border: 1px solid #00B2FF;
@@ -1119,6 +1133,7 @@ button,
 
 .list__name {
   width: 170px;
+  color: #ffffff;
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;

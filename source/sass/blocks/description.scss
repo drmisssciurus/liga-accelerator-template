@@ -28,6 +28,10 @@
   color: $color-background-header;
 }
 
+#more {
+  display: none;
+}
+
 .description__button {
   color: $color-default-blue;
   border: 1px solid $color-default-blue;
